@@ -38,39 +38,28 @@ class AnimationListScreen extends StatelessWidget {
         child: ListView.separated(
           separatorBuilder: (context, i) => Divider(),
           itemCount: _animationPages.length,
-          itemBuilder: (
-              context, i
-              ) =>
-              _buildListItem(context, _animationPages[i]
-              ),
+          itemBuilder: (context, i) =>
+              _buildListItem(context, _animationPages[i]),
         ),
       ),
     );
   }
 }
 
-Widget _buildListItem(
-    BuildContext context, AnimationPageBase animationPage
-    ) {
-  final _theme = Theme.of(context
-  );
+Widget _buildListItem(BuildContext context, AnimationPageBase animationPage) {
+  final _theme = Theme.of(context);
   final _random = Random.secure();
 
   return Container(
     color: Color.fromARGB(
       255,
-      _random.nextInt(256
-      ),
-      _random.nextInt(256
-      ),
-      _random.nextInt(256
-      ),
+      _random.nextInt(256),
+      _random.nextInt(256),
+      _random.nextInt(256),
     ),
     child: Container(
-      margin: EdgeInsets.only(left: 8
-      ),
-      padding: EdgeInsets.all(8
-      ),
+      margin: EdgeInsets.only(left: 8),
+      padding: EdgeInsets.all(8),
       color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -90,16 +79,12 @@ Widget _buildListItem(
           ),
           IconButton(
             iconSize: 36,
-            icon: Icon(Icons.play_circle_outline
-            ),
-            onPressed: (
-                ) {
+            icon: Icon(Icons.play_circle_outline),
+            onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (
-                      context
-                      ) {
+                  builder: (context) {
                     return animationPage;
                   },
                   fullscreenDialog: true,
