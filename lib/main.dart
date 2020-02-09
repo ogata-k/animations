@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:animations/animations/animated_align_page.dart';
 import 'package:animations/animations/animated_container_page.dart';
 import 'package:animations/animations/animated_default_text_style_page.dart';
+import 'package:animations/animations/animated_opacity_page.dart';
 import 'package:animations/animations/base.dart';
 import 'package:flutter/material.dart';
 
@@ -30,6 +31,7 @@ class AnimationListScreen extends StatelessWidget {
       AnimatedAlignPage(),
       AnimatedContainerPage(),
       AnimatedDefaultTextStylePage(),
+      AnimatedOpacityPage(),
     ];
 
     return Scaffold(
