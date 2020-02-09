@@ -7,6 +7,11 @@ class MyIcon extends StatelessWidget {
   const MyIcon({Key key, @required this.height, @required this.width})
       : super(key: key);
 
+  factory MyIcon.square({@required double size}) => MyIcon(
+        height: size,
+        width: size,
+      );
+
   @override
   Widget build(BuildContext context) {
     return Container(

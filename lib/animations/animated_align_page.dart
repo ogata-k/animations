@@ -22,10 +22,7 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
   ];
 
   var _index = 0;
-  static const _myIcon = MyIcon(
-    height: 100,
-    width: 100,
-  );
+  final _myIcon = MyIcon.square(size: 100);
 
   @override
   Widget build(BuildContext context) {
@@ -42,6 +39,7 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
           milliseconds: 500,
         ),
         child: _myIcon,
+        curve: Curves.linear,
       ),
     );
   }

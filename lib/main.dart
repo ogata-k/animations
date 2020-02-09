@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:animations/animations/animated_align_page.dart';
+import 'package:animations/animations/animated_container_page.dart';
 import 'package:animations/animations/base.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,7 @@ class AnimationListScreen extends StatelessWidget {
     // 確認可能なアニメーションの一覧
     final List<Widget> _animationPages = <Widget>[
       AnimatedAlignPage(),
+      AnimatedContainerPage(),
     ];
 
     return Scaffold(
@@ -36,7 +38,7 @@ class AnimationListScreen extends StatelessWidget {
       ),
       body: Scrollbar(
         child: ListView.separated(
-          separatorBuilder: (context, i) => Divider(),
+          separatorBuilder: (context, i) => Divider(height: 2),
           itemCount: _animationPages.length,
           itemBuilder: (context, i) =>
               _buildListItem(context, _animationPages[i]),
