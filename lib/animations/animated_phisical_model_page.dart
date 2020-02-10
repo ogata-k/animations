@@ -9,7 +9,7 @@ class AnimatedPhysicalModelPage extends StatefulWidget
       _AnimatedPhysicalModelPageState();
 
   @override
-  String get name => 'animatedPhysicalModel';
+  String get name => 'animated physical model';
 }
 
 class _AnimatedPhysicalModelPageState extends State<AnimatedPhysicalModelPage> {
@@ -19,7 +19,7 @@ class _AnimatedPhysicalModelPageState extends State<AnimatedPhysicalModelPage> {
   @override
   Widget build(BuildContext context) {
     return AnimationPageScaffold(
-      title: 'AnimatedPhysicalModel',
+      title: widget.name,
       action: () {
         setState(() {
           _hasElevation = !_hasElevation;
