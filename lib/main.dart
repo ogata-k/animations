@@ -8,6 +8,7 @@ import 'package:animations/animations/animated_padding_page.dart';
 import 'package:animations/animations/animated_phisical_model_page.dart';
 import 'package:animations/animations/animated_positioned_directional_page.dart';
 import 'package:animations/animations/animated_postioned_page.dart';
+import 'package:animations/animations/animated_theme_page.dart';
 import 'package:animations/animations/base.dart';
 import 'package:flutter/material.dart';
 
@@ -40,6 +41,7 @@ class AnimationListScreen extends StatelessWidget {
       AnimatedPhysicalModelPage(),
       AnimatedPositionedPage(),
       AnimatedPositionedDirectionalPage(),
+      AnimatedThemePage(),
     ];
 
     return Scaffold(
