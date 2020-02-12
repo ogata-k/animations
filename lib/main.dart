@@ -4,6 +4,7 @@ import 'package:animations/animations/animated_align_page.dart';
 import 'package:animations/animations/animated_container_page.dart';
 import 'package:animations/animations/animated_cross_fade.dart';
 import 'package:animations/animations/animated_default_text_style_page.dart';
+import 'package:animations/animations/animated_icon_page.dart';
 import 'package:animations/animations/animated_opacity_page.dart';
 import 'package:animations/animations/animated_padding_page.dart';
 import 'package:animations/animations/animated_phisical_model_page.dart';
@@ -44,6 +45,7 @@ class AnimationListScreen extends StatelessWidget {
       AnimatedPositionedDirectionalPage(),
       AnimatedThemePage(),
       AnimatedCrossFadePage(),
+      AnimatedIconPage(),
     ];
 
     return Scaffold(
