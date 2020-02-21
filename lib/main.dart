@@ -4,6 +4,7 @@ import 'package:animations/animations/animated_align_page.dart';
 import 'package:animations/animations/animated_container_page.dart';
 import 'package:animations/animations/animated_cross_fade.dart';
 import 'package:animations/animations/animated_default_text_style_page.dart';
+import 'package:animations/animations/animated_hilight_page.dart';
 import 'package:animations/animations/animated_icon_page.dart';
 import 'package:animations/animations/animated_modal_barrier_page.dart';
 import 'package:animations/animations/animated_opacity_page.dart';
@@ -37,6 +38,7 @@ class AnimationListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // 確認可能なアニメーションの一覧
     final List<Widget> _animationPages = <Widget>[
+      AnimatedHighlightContainerPage(),
       AnimatedAlignPage(),
       AnimatedContainerPage(),
       AnimatedDefaultTextStylePage(),
